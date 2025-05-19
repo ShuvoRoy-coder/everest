@@ -1,14 +1,3 @@
-function setLanguage(lang) {
-        // Save language preference
-        localStorage.setItem('language', lang);
-
-        // Update text content for all elements with data-i18n
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            el.textContent = translations[lang][key];
-        });
-    }
-
 document.addEventListener("DOMContentLoaded", () => {
     // On page load, check localStorage and apply language
     const savedLang = localStorage.getItem('language') || 'en';
