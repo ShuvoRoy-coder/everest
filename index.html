@@ -38,10 +38,15 @@
       }
 
       @keyframes pan {
-        0% { transform: translateX(0%); }
-        25% { transform: translateX(3%); }
-        75% { transform: translateX(-3%); }
-        100% { transform: translateX(0%); }
+        0% {
+          transform: translateX(3%);
+        }
+        50% {
+          transform: translateX(-3%);
+        }
+        100% {
+          transform: translateX(3%);
+        }
       }
 
       @keyframes verticalBounce {
@@ -180,7 +185,7 @@
   <section id="hero" class="h-[calc(100dvh-65px)]
         flex items-center justify-center relative
         px-4 lg:px-10 overflow-hidden z-0">
-    <div class="w-[106%] h-full absolute -translate-x-1/2 left-1/2 top-0 animate-[pan_20s_ease-in-out_infinite]">
+    <div class="w-[106%] h-full absolute -translate-x-1/2 left-1/2 top-0 animate-[pan_10s_ease-in-out_infinite] sm:animate-[pan_20s_ease-in-out_infinite]">
       <img src="/assets/images/home/hero.webp" alt="hero-bg" class="absolute top-0 left-0 w-full h-full object-cover">
     </div>
 

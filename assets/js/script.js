@@ -7,14 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuList = document.querySelector("nav ul");
     const toggleIcon = document.querySelector(".toggleIcon");
     const crossIcon = document.querySelector(".crossIcon");
+    const allNavLink = document.querySelectorAll("nav ul li a");
 
-    menuButton.addEventListener("click", () => {
+    const navAreaToggle = ()=> {
         menuList.classList.toggle("opacity-0");
         menuList.classList.toggle("invisible");
         menuList.classList.toggle("pointer-events-none");
         toggleIcon.classList.toggle("hidden");
         crossIcon.classList.toggle("hidden");
+    }
+
+    menuButton.addEventListener("click", () => {
+        navAreaToggle();
     });
+
+    allNavLink.forEach(navLink => {
+        navLink.addEventListener("click", () => {
+            navAreaToggle();
+        })
+    })
 
 
     const dropDownBtn = document.querySelector('.dropdownButton');
