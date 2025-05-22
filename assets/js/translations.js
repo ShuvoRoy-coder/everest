@@ -47,6 +47,11 @@ const translations = {
     by_migloo_text: "Creator and distributor of sports art objects",
     everest_inmobile_text: "Acquisition and management of real estate properties",
 
+    our_partners: "Our Partners",
+    partners_info: "At <b>EVEREST INFINITY GROUP</b>, we are honored to collaborate with prestigious partners who share our vision of growth and innovation. These partnerships are a testament to the trust they place in us to meet their strategic needs and support them in their projects.<br/><br/>Our partners, coming from various sectors such as sports, events, and training, recognize the excellence of our solutions and our ability to deliver tangible results. This trust reflects our professionalism, expertise, and commitment to providing tailored services aligned with market expectations.<br/><br/>We strive to build strong and lasting relationships based on transparency, innovation, and performance. Through this collaborative approach, EVEREST INFINITY GROUP continues to grow and evolve, with joint projects paving the way for new opportunities in the future.<br/><br/>We are proud to showcase these partnerships, which highlight our ability to be a reliable and strategic player in the sectors in which we operate. These relationships are a mark of the quality and relevance of our work, and we look forward to continuing to build ambitious and long-term projects together.",
+
+    address: "Address : ",
+    telephone: "Telephone : ",
 
   },
   fr: {
@@ -96,6 +101,12 @@ const translations = {
     everest_solution_text: "Services spécialisés dans les pôles administratif, marketing et comptable",
     by_migloo_text: "Créateur et distributeur d’objets d’arts sportifs",
     everest_inmobile_text: " Acquisition et exploitation de biens immobiliers",
+
+    our_partners: "Nos Partenaires",
+    partners_info: " Chez <b>EVEREST INFINITY GROUP,</b> nous avons l’honneur de collaborer avec des partenaires prestigieux qui partagent notre vision de croissance et d’innovation. Ces collaborations sont le témoignage de la confiance qu’ils nous accordent pour répondre à leurs besoins stratégiques et les accompagner dans leurs projets. <br/><br/> Nos partenaires, issus de divers secteurs comme le sport, l'événementiel et la formation, reconnaissent l'excellence de nos solutions et notre capacité à apporter des résultats concrets. Cette confiance témoigne de notre sérieux, de notre expertise et de notre engagement à offrir des services sur mesure, en phase avec les attentes du marché. <br/><br/> Nous nous efforçons de bâtir des relations solides et durables, basées sur la transparence, l'innovation et la performance. Grâce à cette approche collaborative, EVEREST INFINITY GROUP continue de se renforcer et de se développer, avec des projets communs qui ouvrent la voie à de nouvelles opportunités pour l’avenir. <br/><br/>  Nous sommes fiers d’afficher ces partenariats, qui illustrent notre capacité à être un acteur fiable et stratégique dans les secteurs où nous intervenons. Ces relations sont un gage de la qualité et de la pertinence de notre travail, et nous sommes impatients de continuer à construire ensemble des projets ambitieux et à long terme.",
+    
+    address: "Adresse : ",
+    telephone: "Téléphone : ",
 
   }
 };

@@ -65,7 +65,7 @@
 
 <body class="bg-theme font-primary text-white">
   <section id="nav-area"
-    class="bg-gray1 px-4 lg:px-10 py-3 flex items-center justify-between gap-5 sticky top-0 left-0 z-50 shadow-lg">
+    class="bg-theme px-4 lg:px-10 py-3 flex items-center justify-between gap-5 sticky top-0 left-0 z-50 shadow-lg">
 
     <a href="index.html" class="w-28 inline-block shrink-0">
       <img src="/assets/images/logos/everest-logo.webp" alt="logo" class="w-full">
@@ -73,7 +73,7 @@
 
     <nav class="w-full flex items-center justify-end gap-5">
       <ul class="w-full text-lg
-          gap-5 absolute left-0 bg-gray1 top-full
+          gap-5 absolute left-0 bg-theme top-full
           flex flex-col items-center justify-start 
           min-h-[calc(100dvh-65px)]
           overflow-y-auto py-5
@@ -185,7 +185,8 @@
   <section id="hero" class="h-[calc(100dvh-65px)]
         flex items-center justify-center relative
         px-4 lg:px-10 overflow-hidden z-0">
-    <div class="w-[106%] h-full absolute -translate-x-1/2 left-1/2 top-0 animate-[pan_10s_ease-in-out_infinite] sm:animate-[pan_20s_ease-in-out_infinite]">
+    <div
+      class="w-[106%] h-full absolute -translate-x-1/2 left-1/2 top-0 animate-[pan_10s_ease-in-out_infinite] sm:animate-[pan_20s_ease-in-out_infinite]">
       <img src="/assets/images/home/hero.webp" alt="hero-bg" class="absolute top-0 left-0 w-full h-full object-cover">
     </div>
 
@@ -212,26 +213,20 @@
       <p class="text-center text-base sm:text-xl" data-i18n="about_info"></p>
     </div>
 
-    <div class="flex items-center justify-center flex-wrap gap-10 pt-14 pb-24">
-      <div class="border-3 font-semibold rounded-full 
-        size-48 sm:size-72
-        text-center flex items-center justify-center 
-        text-xl sm:text-2xl" data-i18n="sport">
+    <!-- <div class="flex items-center justify-center flex-wrap gap-10 pt-14 pb-24">
+      <div class="font-semibold
+        text-center text-xl sm:text-2xl" data-i18n="sport">
       </div>
-      <div class="border-3 font-semibold rounded-full 
-        size-48 sm:size-72
-        text-center flex items-center justify-center 
-        text-xl sm:text-2xl" data-i18n="evenementiel">
+      <div class="font-semibold
+        text-center text-xl sm:text-2xl" data-i18n="evenementiel">
       </div>
-      <div class="border-3 font-semibold rounded-full 
-        size-48 sm:size-72
-        text-center flex items-center justify-center 
-        text-xl sm:text-2xl" data-i18n="formation">
+      <div class="font-semibold
+        text-center text-xl sm:text-2xl" data-i18n="formation">
 
       </div>
-    </div>
+    </div> -->
 
-    <div class="text-center text-base sm:text-xl" data-i18n="leGroupe"></div>
+    <div class="text-center text-base sm:text-xl pt-24" data-i18n="leGroupe"></div>
 
     <div class="flex items-center justify-center flex-wrap gap-10 pt-10">
 
@@ -309,15 +304,16 @@
 
   <section id="structure" class="w-full pb-16 overflow-hidden">
     <div class="flex flex-col-reverse lg:flex-row">
-      
+
       <div class="w-full lg:w-1/2 px-4 lg:px-10 py-16 bg-theme">
-        
+
         <div class="space-y-4">
           <h1 class="text-center lg:text-left text-3xl sm:text-5xl font-semibold" data-i18n="notre_structure"></h1>
           <p class="text-left text-base sm:text-xl" data-i18n="structure_details"></p>
         </div>
         <div class="max-w-[500px] mx-auto mt-10">
-          <img src="/assets/images/logos/structure-circle.webp" alt="all-icons" class="w-full animate-[spinCircle_80s_linear_infinite]">
+          <img src="/assets/images/logos/structure-circle.webp" alt="all-icons"
+            class="w-full animate-[spinCircle_80s_linear_infinite]">
         </div>
       </div>
 
@@ -328,7 +324,7 @@
         </div>
 
         <div class="mt-10 space-y-10">
-          
+
           <div class="flex items-start gap-5">
             <div class="w-5 shrink-0 mt-1.5">
               <img src="/assets/images/logos/tick-icon.svg" alt="icon" class="w-full">
@@ -360,15 +356,15 @@
           </div>
 
         </div>
-        
+
       </div>
     </div>
   </section>
 
-  <section id="societies" class="w-full py-20 bg-gray1">
+  <section id="societies" class="w-full pt-20 bg-gray1">
     <div class="flex flex-col lg:flex-row gap-y-20">
-      
-      <div class="w-full lg:w-[35%] px-4 lg:px-10"> 
+
+      <div class="w-full lg:w-[35%] px-4 lg:px-10">
         <div class="space-y-4">
           <h1 class="text-center lg:text-left text-3xl sm:text-5xl font-semibold" data-i18n="nos_societes"></h1>
           <p class="text-left text-base sm:text-xl" data-i18n="nos_societes_details"></p>
@@ -379,8 +375,7 @@
         <div class="grid grid-cols-1 smd:grid-cols-2 sm:grid-cols-3">
 
           <a href="welive.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300"
-          >
+            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/wewlive.png" alt="logo" class="w-full">
             </span>
@@ -389,8 +384,7 @@
           </a>
 
           <a href="mozart-co.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300"
-          >
+            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/mozart-co.png" alt="logo" class="w-full">
             </span>
@@ -399,8 +393,7 @@
           </a>
 
           <a href="spot.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300"
-          >
+            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/spot.png" alt="logo" class="w-full">
             </span>
@@ -409,18 +402,16 @@
           </a>
 
           <a href="insed-school.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300"
-          >
+            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/inseed-fitness-school.png" alt="logo" class="w-full">
             </span>
             <span class="text-center font-bold text-xl">MOZART & CO.</span>
             <span class="text-base max-w-[150px] text-center" data-i18n="insed_text"></span>
           </a>
-          
+
           <a href="forma-defense.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300"
-          >
+            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/formula-defense.png" alt="logo" class="w-full">
             </span>
@@ -429,8 +420,7 @@
           </a>
 
           <a href="moonwalker.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300"
-          >
+            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/moon-walker.png" alt="logo" class="w-full">
             </span>
@@ -439,8 +429,7 @@
           </a>
 
           <a href="everest-solutions.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300"
-          >
+            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/everest-solutions.png" alt="logo" class="w-full">
             </span>
@@ -449,8 +438,7 @@
           </a>
 
           <a href="everest-inmobile.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300"
-          >
+            justify-center gap-4 bg-black hover:bg-[#2b2b2b] transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/everest-inmobile.png" alt="logo" class="w-full">
             </span>
@@ -459,8 +447,7 @@
           </a>
 
           <a href="by-miglo.html" class="w-full p-4 aspect-square sm:aspect-auto inline-flex flex-col items-center 
-            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300"
-          >
+            justify-center gap-4 bg-blue1 hover:bg-blueHv transition-all duration-300">
             <span class="w-[120px]">
               <img src="/assets/images/logos/by-migloo.png" alt="logo" class="w-full">
             </span>
@@ -473,127 +460,146 @@
     </div>
   </section>
 
-  <section id="sponsor" class="w-full px-4 lg:px-10 py-20 bg-white">
+  <section id="partners" class="w-full px-4 lg:px-10 py-20 bg-white text-gray2">
+
+    <div class="max-w-[1200px] mx-auto space-y-4 pb-20">
+      <h1 class="text-center text-3xl sm:text-5xl font-semibold" data-i18n="our_partners"></h1>
+      <p class="text-center text-base sm:text-xl" data-i18n="partners_info"></p>
+    </div>
+
     <div class="max-w-[1200px] mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-16">
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/psg.png" alt="logo">
+        <img src="/assets/images/logos/partners/psg.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/basic-fit.png" alt="logo">
-      </div>
-      
-      <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/radisson.png" alt="logo">
+        <img src="/assets/images/logos/partners/basic-fit.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/bordeaux.png" alt="logo">
+        <img src="/assets/images/logos/partners/radisson.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/france-travail.png" alt="logo">
+        <img src="/assets/images/logos/partners/bordeaux.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/mvagp.png" alt="logo">
+        <img src="/assets/images/logos/partners/france-travail.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/moncompteFormation.png" alt="logo">
+        <img src="/assets/images/logos/partners/mvagp.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/bord-eaux.png" alt="logo">
+        <img src="/assets/images/logos/partners/moncompteFormation.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/on-air.png" alt="logo">
+        <img src="/assets/images/logos/partners/bord-eaux.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/gl-events.png" alt="logo">
+        <img src="/assets/images/logos/partners/on-air.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/lappart.png" alt="logo">
+        <img src="/assets/images/logos/partners/gl-events.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/ucpa.png" alt="logo">
+        <img src="/assets/images/logos/partners/lappart.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/bordeaux-metropole.png" alt="logo">
+        <img src="/assets/images/logos/partners/ucpa.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/groupe-sedadi.png" alt="logo">
+        <img src="/assets/images/logos/partners/bordeaux-metropole.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/lou.png" alt="logo">
+        <img src="/assets/images/logos/partners/groupe-sedadi.png" alt="logo">
       </div>
 
       <div class="w-full flex items-center justify-center">
-        <img src="/assets/images/logos/sponsor/le-parc-des.png" alt="logo">
+        <img src="/assets/images/logos/partners/lou.png" alt="logo">
       </div>
-      
+
+      <div class="w-full flex items-center justify-center">
+        <img src="/assets/images/logos/partners/le-parc-des.png" alt="logo">
+      </div>
+
     </div>
+
   </section>
 
-  <footer id="footer" class="w-full px-4 lg:px-10 py-20 bg-theme">
-      <div class="w-full flex flex-col sm:flex-row gap-10 sm:items-end justify-between">
-        <div class="text-base sm:text-xl space-y-10">
-          <div class="space-y-1">
-            <div>
-              <span class="font-semibold">Adress:</span>
-              <span>44 rue Promis 33100 BORDEAUX</span>
-            </div>
-            <div>
-              <span class="font-semibold">Telephone:</span>
-              <span>06 12 13 14 97</span>
-            </div>
-            <div>
-              <span class="font-semibold">E-mail:</span>
-              <span>direction@everestinfinity.group</span>
-            </div>
-          </div>
-          
-          <div class="flex items-center gap-1.5">
-            <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
-              transition-all duration-300 hover:bg-slate-300"
-            >
-              <img src="/assets/images/logos/linked-in.svg" alt="logo" class="w-full">
-            </a>
-            <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
-              transition-all duration-300 hover:bg-slate-300"
-            >
-              <img src="/assets/images/logos/facebook.svg" alt="logo" class="w-full mr-1">
-            </a>
-            <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
-              transition-all duration-300 hover:bg-slate-300"
-            >
-              <img src="/assets/images/logos/instagram.svg" alt="logo" class="w-full">
-            </a>
-          </div>
+  <footer id="footer" class="w-full relative bg-white">
+    <img src="/assets/images/wave.svg" alt="wave" class="w-full object-cover"> 
 
-          <div class="space-y-2">
-            <div class="w-[120px]">
-              <img src="/assets/images/qr-code.png" alt="qr-code" class="w-full">
-            </div>
-            <div class="font-semibold">
-              www.everestinfinity.group
-            </div>
-          </div>
+    <div class="relative z-10 w-full flex flex-col md:flex-row gap-10 justify-between px-4 lg:px-10 pb-10 bg-theme">
 
+      <div class="text-base sm:text-xl space-y-3">
+        <div class="flex items-center gap-1.5">
+          <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
+              transition-all duration-300 hover:bg-slate-300">
+            <img src="/assets/images/logos/linked-in.svg" alt="logo" class="w-full">
+          </a>
+          <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
+              transition-all duration-300 hover:bg-slate-300">
+            <img src="/assets/images/logos/facebook.svg" alt="logo" class="w-full mr-1">
+          </a>
+          <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
+              transition-all duration-300 hover:bg-slate-300">
+            <img src="/assets/images/logos/instagram.svg" alt="logo" class="w-full">
+          </a>
         </div>
 
+        <div class="space-y-2">
+          <div class="w-[120px]">
+            <img src="/assets/images/qr-code.png" alt="qr-code" class="w-full">
+          </div>
+          <div class="font-semibold">
+            www.everestinfinity.group
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-5">
+        <div>
+          <span class="font-semibold" data-i18n="address"></span>
+          <span>44 rue Promis 33100 BORDEAUX</span>
+        </div>
+        <div>
+          <span class="font-semibold">E-mail : </span>
+          <span>direction@everestinfinity.group</span>
+        </div>
+        <div class="">
+          <div class="font-semibold" data-i18n="telephone"></div>
+          <div>
+            <span>Bryan DURANTET - </span>
+            <span>06 12 13 14 97</span>
+          </div>
+          <div>
+            <span>Christophe MARTINHITA - </span>
+            <span>06 12 04 59 04</span>
+          </div>
+          <div>
+            <span>Thomas GUY - </span>
+            <span>06 30 38 09 13</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-end">
         <a href="index.html" class="max-w-[250px]">
           <img src="/assets/images/logos/everest-logo.webp" alt="logo" class="w-full">
         </a>
       </div>
+    </div>
   </footer>
 
   <script src="/assets/js/script.js"></script>
