@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="/assets/images/fav-icon.ico" type="image/x-icon">
+  <title>EVEREST</title>
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- font-family: "Montserrat", sans-serif; -->
@@ -40,17 +41,17 @@
   </style>
 </head>
 
-<body
-  class="bg-theme font-primary text-white bg-[url('/assets/images/contact-us-bg.webp')] w-full bg-cover bg-center bg-no-repeat">
+<body class="bg-theme font-primary text-white">
 
-  <section id="nav-area"
-    class="bg-theme px-4 lg:px-10 py-3 flex items-center justify-between gap-5 sticky top-0 left-0 z-50 shadow-lg">
+  <section id="nav-area" class="bg-theme px-4 lg:px-10 py-3 flex items-center justify-between gap-5 sticky top-0 left-0 
+      z-50 shadow-sm shadow-gray-700">
 
     <a href="index.html" class="w-28 inline-block shrink-0">
       <img src="/assets/images/logos/everest-logo.webp" alt="logo" class="w-full">
     </a>
 
     <nav class="w-full flex items-center justify-end gap-5">
+
       <ul class="w-full text-lg
           gap-5 absolute left-0 bg-theme top-full
           flex flex-col items-center justify-start 
@@ -71,7 +72,7 @@
           </a>
         </li>
         <li>
-          <a href="#about-us" data-i18n="aboutUs" class="px-1 relative
+          <a href="index.html#about-us" data-i18n="aboutUs" class="px-1 relative
                 after:bg-white after:h-0.5 after:w-0
                 after:transition-all after:duration-300
                 hover:after:w-full after:absolute after:bottom-0
@@ -80,7 +81,7 @@
           </a>
         </li>
         <li>
-          <a href="#structure" data-i18n="notre_structure" class="px-1 relative
+          <a href="index.html#structure" data-i18n="notre_structure" class="px-1 relative
                 after:bg-white after:h-0.5 after:w-0
                 after:transition-all after:duration-300
                 hover:after:w-full after:absolute after:bottom-0
@@ -88,15 +89,84 @@
             Our structure
           </a>
         </li>
-        <li>
-          <a href="#societies" data-i18n="nos_societes" class="px-1 relative
+
+        <li class="relative lg:static">
+          <a href="index.html#companies" data-i18n="nos_societes" class="px-1 relative dropdownButton
                 after:bg-white after:h-0.5 after:w-0
                 after:transition-all after:duration-300
                 hover:after:w-full after:absolute after:bottom-0
                 after:left-0 after:rounded-full">
             Our Companies
           </a>
+          <div class="dropdownArea bg-gray1 grid grid-cols-3 gap-5 
+            px-10 py-5 absolute right-0 z-10 top-full shadow-xl transition-all duration-300
+            opacity-0 pointer-events-none invisible">
+            <a href="weelive.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              WEELIVE
+            </a>
+            <a href="mozart-co.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              MOZART & CO.
+            </a>
+            <a href="spot.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              SPOT
+            </a>
+            <a href="insed-school.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              INSED FITNESS SCHOOL
+            </a>
+            <a href="forma-defense.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              FORMA DÉFENSE
+            </a>
+            <a href="moonwalker.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              MOONWALKER
+            </a>
+            <a href="everest-solutions.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              EVEREST SOLUTIONS
+            </a>
+            <a href="by-miglo.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              BY MIGLOO
+            </a>
+            <a href="everest-inmobile.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              EVEREST IMMOBILIER
+            </a>
+          </div>
         </li>
+
         <li>
           <a href="contact-us.html" data-i18n="contactUs" class="px-1 relative
                 after:bg-white after:h-0.5 after:w-0
@@ -107,6 +177,7 @@
             Contact us
           </a>
         </li>
+
         <li class="relative lg:static">
           <button class="dropdownButton size-6 cursor-pointer flex items-center justify-center">
             <svg class="size-full" viewBox="0 0 229 229" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,6 +207,7 @@
             </button>
           </div>
         </li>
+
       </ul>
 
       <button class="navButton block lg:hidden relative size-[24px]">
@@ -158,15 +230,17 @@
             fill="white" />
         </svg>
       </button>
+
     </nav>
   </section>
 
-  <section class="h-[50dvh] w-full"></section>
+  <section
+    class="h-[80dvh] w-full bg-[url('/assets/images/contact-us-bg.webp')] bg-cover bg-center bg-no-repeat flex items-end">
+    <img src="/assets/images/wave.svg" alt="wave" class="w-full object-cover">
+  </section>
 
   <footer id="footer" class="w-full relative">
-    <img src="/assets/images/wave.svg" alt="wave" class="w-full object-cover">
-
-    <div class="relative z-10 w-full flex flex-col md:flex-row gap-10 justify-between px-4 lg:px-10 pb-10 bg-theme">
+    <div class="relative z-10 w-full flex flex-col md:flex-row gap-10 justify-between px-4 lg:px-10 pb-10 bg-theme pt-10 md:pt-0">
 
       <div class="text-base sm:text-xl space-y-3">
         <div class="flex items-center gap-1.5">

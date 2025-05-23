@@ -53,6 +53,31 @@ const translations = {
     address: "Address : ",
     telephone: "Telephone : ",
 
+    les_points_cles: "The key points :",
+
+    // weelive company start
+    weelive_info: "<b>WEELIVE</b> is a rapidly growing company specializing in event production and audiovisual services. <br/><br/> Equipped with cutting-edge technology, rare in the market, WEELIVE stands out for its expertise and its prestigious client network, including PSG and GL Events. <br/><br/> The company also outfits fitness clubs with sound and lighting systems, such as the On Air group across France, as well as in Spain and Portugal. <br/><br/> In the event sector, WEELIVE delivers spectacular services, including for PSG events, with the installation of fan zones and giant screens, providing high-level entertainment.",
+    clients: "Prestigious clients like PSG and On Air",
+    equipe: "Outfitting gyms across France, Spain, and Portugal",
+    installation: "Installation of fan zones and giant screens for Ligue 1 matches",
+    // weelive company end
+
+    // insed company start
+    insed_info: "<b>INSED</b> is the leading training organization in France in the field of sports. <br/><br/> Specializing in the CQP Fitness Instructor certification, <b>INSED</b> trains nearly 700 aspiring fitness coaches each year across France. Present in 8 cities in 2024, <b>INSED</b> plans to expand to 5 more cities in 2025, reaching a total of 13 cities and strengthening its leadership position. <br/><br/> In addition to its flagship certification, <b>INSED</b> is diversifying its offerings with training programs tailored to the growing needs of the market, providing students with educational excellence and access to career opportunities in the sports sector.",
+    plus: "Over 700 fitness coach trainees trained each year",
+    presence: "Present in 8 cities in 2024, 13 cities in 2025",
+    leader: "Leader in CQP Fitness Instructor certification",
+    // insed company end
+
+    // mozart company start
+    mozart_info: "<b>MOZART & Co.</b> is a modern and innovative audiovisual hub located in the heart of Bordeaux, at 44 rue Promis, 33100 Bordeaux. <br/><br/> Covering an area of 1200 m², this space is designed to meet the needs of companies operating in the audiovisual sector. <br/><br/> It offers state-of-the-art equipment for high-quality productions, while benefiting from an ideal location in a lively neighborhood. <br/><br/> This company mainly hosts the entities of the <b>EVEREST INFINITY GROUP,</b> providing them with top-tier facilities for their various projects.",
+    situe: "Located in the heart of Bordeaux",
+    espace: "1200 m² of space",
+    siege: "Headquarters of the Everest Group",
+    // mozart company end
+
+
+
   },
   fr: {
     home: "Accueil",
@@ -104,9 +129,31 @@ const translations = {
 
     our_partners: "Nos Partenaires",
     partners_info: " Chez <b>EVEREST INFINITY GROUP,</b> nous avons l’honneur de collaborer avec des partenaires prestigieux qui partagent notre vision de croissance et d’innovation. Ces collaborations sont le témoignage de la confiance qu’ils nous accordent pour répondre à leurs besoins stratégiques et les accompagner dans leurs projets. <br/><br/> Nos partenaires, issus de divers secteurs comme le sport, l'événementiel et la formation, reconnaissent l'excellence de nos solutions et notre capacité à apporter des résultats concrets. Cette confiance témoigne de notre sérieux, de notre expertise et de notre engagement à offrir des services sur mesure, en phase avec les attentes du marché. <br/><br/> Nous nous efforçons de bâtir des relations solides et durables, basées sur la transparence, l'innovation et la performance. Grâce à cette approche collaborative, EVEREST INFINITY GROUP continue de se renforcer et de se développer, avec des projets communs qui ouvrent la voie à de nouvelles opportunités pour l’avenir. <br/><br/>  Nous sommes fiers d’afficher ces partenariats, qui illustrent notre capacité à être un acteur fiable et stratégique dans les secteurs où nous intervenons. Ces relations sont un gage de la qualité et de la pertinence de notre travail, et nous sommes impatients de continuer à construire ensemble des projets ambitieux et à long terme.",
-    
+
     address: "Adresse : ",
     telephone: "Téléphone : ",
+
+    les_points_cles: "Les points clés :",
+
+    // weelive company start
+    weelive_info: "<b>WEELIVE</b> est une société en pleine expansion, spécialisée dans l'événementiel et l'audiovisuel. <br/><br/> Avec du matériel de pointe, rare sur le marché, WEELIVE se distingue par son expertise et son réseau de clients prestigieux, tels que le PSG ou encore GL Events. <br/><br/> L’entreprise équipe également des clubs de fitness en sonorisation et en éclairage comme ceux du groupe On Air dans toute la France mais aussi en Espagne et au Portugal. <br/><br/>  Dans le secteur de l'événementiel, WEELIVE réalise des prestations spectaculaires, notamment pour des événements du PSG avec l’installation de fan zone et d’écrans géants, offrant ainsi des spectacles de haut niveau.",
+    clients: "Clients prestigieux comme le PSG et On Air",
+    equipe: "Equipe des salles de sport en France, en Espagne et au Portugal",
+    installation: "Installation de fan zone et d’écrans géants pour des matchs de Ligue 1",
+    // weelive company end
+
+    // insed company start
+    insed_info: "<b>INSED</b> est le leader en France des organismes de formation dans le domaine du sport. <br/><br/> Spécialisée dans le CQP Instructeur Fitness, <b>INSED</b> forme chaque année près de 700 stagiaires coachs sportifs à travers la France. Présente dans 8 villes en 2024, <b>INSED</b> prévoit d’ouvrir 5 nouvelles villes en 2025, pour atteindre 13 villes et solidifier sa position de leader. <br/><br/> En plus de sa formation phare, <b>l’INSED</b> diversifie son offre avec des programmes de formation adaptés aux besoins croissants du marché, assurant à ses étudiants une excellence pédagogique et un accès à des opportunités professionnelles dans le secteur du sport.",
+    plus: "Plus de 700 stagiaires coachs sportifs formés chaque année",
+    presence: "Présence dans 8 villes en 2024, 12 villes en 2025",
+    leader: "Leader sur le CQP Instructeur Fitness",
+    // insed company end
+    // mozart company start
+    mozart_info: " <b>MOZART & Co.</b> est un pôle audiovisuel moderne et innovant, situé au cœur de Bordeaux, au 44 rue Promis, 33100 Bordeaux. <br/><br/> Avec une superficie de 1200 m², cet espace est conçu pour répondre aux besoins des entreprises évoluant dans le secteur de l’audiovisuel. <br/><br/> Il offre des équipements de pointe pour des productions de qualité, tout en bénéficiant d’une localisation idéale dans un quartier dynamique. <br/><br/> Cette entreprise accueille principalement les sociétés du groupe <b>EVEREST INFINITY GROUP,</b> leur fournissant des installations de haute qualité pour leurs différents projets. ",
+    situe: "Situé au coeur de Bordeaux",
+    espace: "1200 m² d’espace",
+    siege: "Siège social du groupe Everest",
+    // mozart company end
 
   }
 };

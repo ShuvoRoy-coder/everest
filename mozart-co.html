@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/images/fav-icon.ico" type="image/x-icon">
+
+  <title>EVEREST / MOZART & CO</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font-family: "Montserrat", sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/style.css">
+  <style type="text/tailwindcss">
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 65px;
+      }
+
+      @theme {
+        --color-theme: #0F1011;
+        --color-gray1: #414141;
+        --color-Hv: #2c2c2c;
+
+        --color-blue1: #2390EB;
+        --color-blueHv: #50b0ff;
+
+        --color-whiteSection: #F1F2F2;
+        --color-gray2: #0F1011;
+
+        --font-primary: "Montserrat", sans-serif;
+
+        --breakpoint-xs: 25rem;
+        --breakpoint-smd: 500px;
+      }
+
+      @keyframes pan {
+        0% {
+          transform: translateX(3%);
+        }
+        50% {
+          transform: translateX(-3%);
+        }
+        100% {
+          transform: translateX(3%);
+        }
+      }
+
+      @keyframes verticalBounce {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(10%); }
+        100% { transform: translateY(0); }
+      }
+
+      @keyframes spinCircle {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+  </style>
+</head>
+
+<body class="bg-theme font-primary text-white">
+
+  <section id="nav-area"
+    class="bg-theme px-4 lg:px-10 py-3 flex items-center justify-between gap-5 sticky top-0 left-0 z-50 shadow-sm shadow-gray-700">
+
+    <a href="index.html" class="w-28 inline-block shrink-0">
+      <img src="/assets/images/logos/everest-logo.webp" alt="logo" class="w-full">
+    </a>
+
+    <nav class="w-full flex items-center justify-end gap-5">
+
+      <ul class="w-full text-lg
+          gap-5 absolute left-0 bg-theme top-full
+          flex flex-col items-center justify-start 
+          min-h-[calc(100dvh-65px)]
+          overflow-y-auto py-5
+          opacity-0 pointer-events-none invisible
+          transition-all duration-300
+          lg:flex-row lg:items-center lg:justify-end lg:py-0 lg:min-h-auto
+          lg:static lg:opacity-100 lg:pointer-events-auto lg:visible">
+        <li>
+          <a href="index.html" data-i18n="home" class="px-1 relative
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full
+              ">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about-us" data-i18n="aboutUs" class="px-1 relative
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+            About us
+          </a>
+        </li>
+        <li>
+          <a href="#structure" data-i18n="notre_structure" class="px-1 relative
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+            Our structure
+          </a>
+        </li>
+
+        <li class="relative lg:static">
+          <a href="#companies" data-i18n="nos_societes" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+            Our Companies
+          </a>
+          <div class="dropdownArea bg-gray1 grid grid-cols-3 gap-5 
+            px-10 py-5 absolute right-0 z-10 top-full shadow-xl transition-all duration-300
+            opacity-0 pointer-events-none invisible">
+            <a href="weelive.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              WEELIVE
+            </a>
+            <a href="mozart-co.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              MOZART & CO.
+            </a>
+            <a href="spot.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              SPOT
+            </a>
+            <a href="insed-school.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              INSED FITNESS SCHOOL
+            </a>
+            <a href="forma-defense.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              FORMA DÉFENSE
+            </a>
+            <a href="moonwalker.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              MOONWALKER
+            </a>
+            <a href="everest-solutions.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              EVEREST SOLUTIONS
+            </a>
+            <a href="by-miglo.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              BY MIGLOO
+            </a>
+            <a href="everest-inmobile.html" class="px-1 relative dropdownButton
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              EVEREST IMMOBILIER
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <a href="contact-us.html" data-i18n="contactUs" class="px-1 relative
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full
+              ">
+            Contact us
+          </a>
+        </li>
+
+        <li class="relative lg:static">
+          <button class="dropdownButton size-6 cursor-pointer flex items-center justify-center">
+            <svg class="size-full" viewBox="0 0 229 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M157.438 114.5C157.438 124.429 156.901 134.001 155.962 143.125H73.0832C72.0992 134.001 71.6072 124.429 71.6072 114.5C71.6072 104.571 72.1439 94.9992 73.0832 85.875H155.962C156.946 94.9992 157.438 104.571 157.438 114.5ZM170.319 85.875H225.377C227.748 95.0439 229 104.615 229 114.5C229 124.385 227.748 133.956 225.377 143.125H170.319C171.258 133.911 171.75 124.34 171.75 114.5C171.75 104.66 171.258 95.0887 170.319 85.875ZM220.681 71.5625H168.485C164.012 42.9822 155.156 19.0535 143.751 3.75703C178.772 13.0154 207.263 38.4201 220.636 71.5625H220.681ZM153.994 71.5625H75.0064C77.7348 55.282 81.9391 40.8801 87.0826 29.2064C91.7789 18.651 97.0119 11.0027 102.066 6.17227C107.075 1.43125 111.235 0 114.5 0C117.765 0 121.925 1.43125 126.934 6.17227C131.988 11.0027 137.221 18.651 141.917 29.2064C147.106 40.8354 151.265 55.2373 153.994 71.5625ZM60.515 71.5625H8.31914C21.7371 38.4201 50.1832 13.0154 85.2488 3.75703C73.8436 19.0535 64.9877 42.9822 60.515 71.5625ZM3.62285 85.875H58.6812C57.742 95.0887 57.25 104.66 57.25 114.5C57.25 124.34 57.742 133.911 58.6812 143.125H3.62285C1.25234 133.956 0 124.385 0 114.5C0 104.615 1.25234 95.0439 3.62285 85.875ZM87.0826 199.749C81.8943 188.12 77.7348 173.718 75.0064 157.438H153.994C151.265 173.718 147.061 188.12 141.917 199.749C137.221 210.304 131.988 217.953 126.934 222.783C121.925 227.569 117.765 229 114.5 229C111.235 229 107.075 227.569 102.066 222.828C97.0119 217.997 91.7789 210.349 87.0826 199.794V199.749ZM60.515 157.438C64.9877 186.018 73.8436 209.946 85.2488 225.243C50.1832 215.985 21.7371 190.58 8.31914 157.438H60.515ZM220.681 157.438C207.263 190.58 178.817 215.985 143.796 225.243C155.201 209.946 164.012 186.018 168.53 157.438H220.726H220.681Z"
+                fill="white" />
+            </svg>
+          </button>
+          <div class="dropdownArea flex flex-col min-w-[150px] bg-gray1 gap-1
+              absolute top-full left-1/2 -translate-x-1/2 lg:right-0 lg:left-auto lg:translate-x-0 p-2 shadow-xl transition-all duration-300
+              opacity-0 pointer-events-none invisible">
+            <button onclick="setLanguage('en')" data-i18n="english" class="inline-block cursor-pointer
+                px-1 relative
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              English
+            </button>
+            <button onclick="setLanguage('fr')" data-i18n="french" class="inline-block cursor-pointer
+                px-1 relative
+                after:bg-white after:h-0.5 after:w-0
+                after:transition-all after:duration-300
+                hover:after:w-full after:absolute after:bottom-0
+                after:left-0 after:rounded-full">
+              French
+            </button>
+          </div>
+        </li>
+
+      </ul>
+
+      <button class="navButton block lg:hidden relative size-[24px]">
+        <svg class="block toggleIcon size-full" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 9.07143C0 8.47969 0.549469 8 1.22727 8H25.7727C26.4505 8 27 8.47969 27 9.07143C27 9.66316 26.4505 10.1429 25.7727 10.1429H1.22727C0.549469 10.1429 0 9.66316 0 9.07143Z"
+            fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M2.5 1C2.5 0.408266 3.00401 0 3.68182 0H25.7727C26.4505 0 27 0.408266 27 1C27 1.59173 26.4505 2 25.7727 2H13.5H3.68182C3.00401 2 2.5 1.59173 2.5 1Z"
+            fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M2.5 17C2.5 16.4083 3.00401 16 3.68182 16H25.7727C26.4505 16 27 16.4083 27 17C27 17.5917 26.4505 18 25.7727 18H13.5H3.68182C3.00401 18 2.5 17.5917 2.5 17Z"
+            fill="white" />
+        </svg>
+
+        <svg class="crossIcon hidden size-full absolute top-0 right-0" viewBox="0 0 8 8" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L4 3.29289L6.64645 0.646447C6.84171 0.451184 7.15829 0.451184 7.35355 0.646447C7.54882 0.841709 7.54882 1.15829 7.35355 1.35355L4.70711 4L7.35355 6.64645C7.54882 6.84171 7.54882 7.15829 7.35355 7.35355C7.15829 7.54882 6.84171 7.54882 6.64645 7.35355L4 4.70711L1.35355 7.35355C1.15829 7.54882 0.841709 7.54882 0.646447 7.35355C0.451184 7.15829 0.451184 6.84171 0.646447 6.64645L3.29289 4L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z"
+            fill="white" />
+        </svg>
+      </button>
+
+    </nav>
+  </section>
+
+  <section id="hero" class="h-[calc(100dvh-65px)]
+      flex items-center justify-center relative
+      px-4 lg:px-10 overflow-hidden z-0">
+
+    <div class="max-w-[400px] w-full relative z-10">
+      <img src="/assets/images/logos/mozart-co.png" alt="logo" class="w-full">
+    </div>
+
+    <div class="absolute bottom-2 left-1/2 -translate-x-1/2 z-10">
+      <a href="#about" class="size-16 rounded-full inline-flex items-center 
+          justify-center cursor-pointer animate-[verticalBounce_2s_ease-in-out_infinite]
+          bg-gray1 transition-all duration-300  hover:bg-Hv">
+        <svg class="mx-auto size-[40%]" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5 0C5.27614 0 5.5 0.223858 5.5 0.5V12.2929L8.64645 9.14645C8.84171 8.95118 9.15829 8.95118 9.35355 9.14645C9.54882 9.34171 9.54882 9.65829 9.35355 9.85355L5.35355 13.8536C5.15829 14.0488 4.84171 14.0488 4.64645 13.8536L0.646447 9.85355C0.451184 9.65829 0.451184 9.34171 0.646447 9.14645C0.841709 8.95118 1.15829 8.95118 1.35355 9.14645L4.5 12.2929V0.5C4.5 0.223858 4.72386 0 5 0Z"
+            fill="white" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="pt-16 w-full">
+
+    <div class="w-full flex gap-5 px-4 lg:px-10
+      items-center lg:items-start bg-theme
+      flex-col-reverse lg:flex-row">
+      <h2 class="text-center lg:text-left w-full lg:w-1/2 text-3xl sm:text-5xl">
+        MOZART & CO.
+      </h2>
+
+      <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+        <div class="w-[150px] sm:w-[200px]">
+          <img src="/assets/images/logos/mozart-co.png" alt="logo" class="w-full">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="py-16 px-4 lg:px-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 bg-theme">
+      <p class="text-center md:text-left text-base sm:text-xl" data-i18n="mozart_info"></p>
+      <div class="w-full">
+        <img src="/assets/images/companies/mozart&co/img-1.webp" alt="img" class="w-full">
+      </div>
+    </div>
+
+    <div class="py-16 px-4 lg:px-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white text-gray2">
+      <div class="w-full">
+        <img src="/assets/images/companies/mozart&co/img-2.webp" alt="img" class="w-full">
+      </div>
+      <div class="w-full">
+        <h4 class="text-2xl sm:text-3xl font-semibold" data-i18n="les_points_cles"></h4>
+
+        <div class="text-base sm:text-xl font-semibold
+          grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-10 pl-5 sm:pl-10 pt-5 sm:pt-10 pb-5">
+          <div class="flex items-start gap-5">
+            <div class="w-5 shrink-0 mt-1.5">
+              <img src="/assets/images/logos/tick-icon.svg" alt="icon" class="w-full">
+            </div>
+            <p data-i18n="situe"></p>
+          </div>
+
+          <div class="flex items-start gap-5">
+            <div class="w-5 shrink-0 mt-1.5">
+              <img src="/assets/images/logos/tick-icon.svg" alt="icon" class="w-full">
+            </div>
+            <p data-i18n="espace"></p>
+          </div>
+
+          <div class="flex items-start gap-5">
+            <div class="w-5 shrink-0 mt-1.5">
+              <img src="/assets/images/logos/tick-icon.svg" alt="icon" class="w-full">
+            </div>
+            <p data-i18n="siege"></p>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- <p class="text-center md:text-left text-base sm:text-xl" data-i18n="weelive_info"></p> -->
+    </div>
+
+  </section>
+
+  <footer id="footer" class="w-full relative bg-white">
+    <img src="/assets/images/wave.svg" alt="wave" class="w-full object-cover">
+
+    <div class="relative z-10 w-full flex flex-col md:flex-row gap-10 justify-between px-4 lg:px-10 pb-10 bg-theme pt-10 md:pt-0">
+
+      <div class="text-base sm:text-xl space-y-3">
+        <div class="flex items-center gap-1.5">
+          <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
+              transition-all duration-300 hover:bg-slate-300">
+            <img src="/assets/images/logos/linked-in.svg" alt="logo" class="w-full">
+          </a>
+          <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
+              transition-all duration-300 hover:bg-slate-300">
+            <img src="/assets/images/logos/facebook.svg" alt="logo" class="w-full mr-1">
+          </a>
+          <a href="#" class="bg-white inline-flex items-center justify-center rounded-full size-8 p-2
+              transition-all duration-300 hover:bg-slate-300">
+            <img src="/assets/images/logos/instagram.svg" alt="logo" class="w-full">
+          </a>
+        </div>
+
+        <div class="space-y-2">
+          <div class="w-[120px]">
+            <img src="/assets/images/qr-code.png" alt="qr-code" class="w-full">
+          </div>
+          <div class="font-semibold">
+            www.everestinfinity.group
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-5">
+        <div>
+          <span class="font-semibold" data-i18n="address"></span>
+          <span>44 rue Promis 33100 BORDEAUX</span>
+        </div>
+        <div>
+          <span class="font-semibold">E-mail : </span>
+          <span>direction@everestinfinity.group</span>
+        </div>
+        <div class="">
+          <div class="font-semibold" data-i18n="telephone"></div>
+          <div>
+            <span>Bryan DURANTET - </span>
+            <span>06 12 13 14 97</span>
+          </div>
+          <div>
+            <span>Christophe MARTINHITA - </span>
+            <span>06 12 04 59 04</span>
+          </div>
+          <div>
+            <span>Thomas GUY - </span>
+            <span>06 30 38 09 13</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-end">
+        <a href="index.html" class="max-w-[250px]">
+          <img src="/assets/images/logos/everest-logo.webp" alt="logo" class="w-full">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/translations.js"></script>
+</body>
+
+</html>

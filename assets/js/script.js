@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const crossIcon = document.querySelector(".crossIcon");
     const allNavLink = document.querySelectorAll("nav ul li a");
 
-    const navAreaToggle = ()=> {
+    const navAreaToggle = () => {
         menuList.classList.toggle("opacity-0");
         menuList.classList.toggle("invisible");
         menuList.classList.toggle("pointer-events-none");
@@ -28,47 +28,49 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-    const dropDownBtn = document.querySelector('.dropdownButton');
-    const dropDownMenu = document.querySelector('.dropdownArea');
+    document.querySelectorAll('.dropdownButton').forEach((dropDownBtn, index) => {
+        const dropDownMenu = dropDownBtn.closest('li').querySelector('.dropdownArea');
 
-    // Show dropdown
-    function showDropdown() {
-        dropDownMenu.classList.remove("opacity-0", "invisible", "pointer-events-none");
-    }
-
-    // Hide dropdown
-    function hideDropdown() {
-        dropDownMenu.classList.add("opacity-0", "invisible", "pointer-events-none");
-    }
-
-    // Toggle on click (for mobile)
-    dropDownBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        dropDownMenu.classList.toggle("opacity-0");
-        dropDownMenu.classList.toggle("invisible");
-        dropDownMenu.classList.toggle("pointer-events-none");
-    });
-
-    // Close on outside click
-    document.addEventListener('click', (e) => {
-        if (!dropDownMenu.contains(e.target) && !dropDownBtn.contains(e.target)) {
-            hideDropdown();
+        // Show dropdown
+        function showDropdown() {
+            dropDownMenu.classList.remove("opacity-0", "invisible", "pointer-events-none");
         }
-    });
 
-    // Hover support (for desktop)
-    dropDownBtn.addEventListener('mouseenter', showDropdown);
-    dropDownMenu.addEventListener('mouseenter', showDropdown);
+        // Hide dropdown
+        function hideDropdown() {
+            dropDownMenu.classList.add("opacity-0", "invisible", "pointer-events-none");
+        }
 
-    dropDownBtn.addEventListener('mouseleave', () => {
-        setTimeout(() => {
-            if (!dropDownMenu.matches(':hover')) {
+        // Toggle on click (for mobile)
+        dropDownBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropDownMenu.classList.toggle("opacity-0");
+            dropDownMenu.classList.toggle("invisible");
+            dropDownMenu.classList.toggle("pointer-events-none");
+        });
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+            if (!dropDownMenu.contains(e.target) && !dropDownBtn.contains(e.target)) {
                 hideDropdown();
             }
-        }, 150); // slight delay to allow moving to the menu
+        });
+
+        // Hover support (for desktop)
+        dropDownBtn.addEventListener('mouseenter', showDropdown);
+        dropDownMenu.addEventListener('mouseenter', showDropdown);
+
+        dropDownBtn.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                if (!dropDownMenu.matches(':hover')) {
+                    hideDropdown();
+                }
+            }, 150);
+        });
+
+        dropDownMenu.addEventListener('mouseleave', hideDropdown);
     });
 
-    dropDownMenu.addEventListener('mouseleave', hideDropdown);
 
 
 });
